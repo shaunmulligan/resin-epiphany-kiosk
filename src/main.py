@@ -1,5 +1,5 @@
 from time import sleep
-print "hello from python..."
+print "testing the Lock..."
 
 while 1:
     print 'waiting'
