@@ -5,10 +5,8 @@
  xset s off
  xset s noblank
 
-mkdir ~/.config
+mkdir /root/.config
 
-while true; do
- sudo matchbox-window-manager -use_cursor no -use_titlebar no &
- sudo -u pi epiphany-browser -a --profile ~/.config http://resin.io
- sleep 2s
-done;
+sudo matchbox-window-manager -use_cursor no -use_titlebar no &
+epiphany-browser -a --profile /root/.config https://html5test.com/ --display=:0
+sleep 2s

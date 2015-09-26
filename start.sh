@@ -9,4 +9,10 @@ if [ "$INITSYSTEM" != "on" ]; then
   /usr/sbin/sshd -p 80 &
 fi
 
-python /usr/src/app/main.py
+ldconfig
+useradd -m pi
+gpasswd -a pi video
+
+echo "allowed_users=anybody" > /etc/X11/Xwrapper.config
+
+xinit /usr/src/app/launchBrowser.sh
