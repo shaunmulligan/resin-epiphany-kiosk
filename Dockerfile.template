@@ -2,6 +2,8 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-python
 MAINTAINER Shaun Mulligan <shaun@resin.io>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && apt-get install -yq \
     openssh-server \
     dbus && \
