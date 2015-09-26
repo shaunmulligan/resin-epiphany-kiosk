@@ -20,6 +20,8 @@ This can be done by removing the leading `##`.
 You can change the default URL by setting an environment variable in your Resin.io dashboard.
 Just create a variable called `URL` and set the value to the web address.
 
+### **Note: The first build and push will take a long while**
+
 ####Currently not working.
 
 * Youtube videos work, but the lag is incredibly bad.
