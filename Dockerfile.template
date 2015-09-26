@@ -27,6 +27,11 @@ RUN apt-get update && apt-get install -y \
     xinit \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get install -y \
+    xautomation \
+    libwayland-dev \
+    cgroup-bin \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ENV INITSYSTEM on
 COPY start.sh start.sh
